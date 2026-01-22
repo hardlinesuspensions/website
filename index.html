@@ -3,68 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller de Suspensiones | HARDLINE</title>
-    <style>
-        :root {
-            --primario: #004085; /* Azul profesional */
-            --secundario: #ffc107; /* Amarillo para resaltar */
-            --whatsapp: #25d366;
-            --texto: #333;
-        }
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: var(--texto); line-height: 1.6; }
-        header { background: var(--primario); color: white; padding: 1rem; text-align: center; }
-        
-        .hero { background: #f4f4f4; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--secundario); }
-        .hero h1 { margin: 0; color: var(--primario); }
-        
-        .servicios { padding: 20px; max-width: 800px; margin: auto; }
-        .servicios ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-        .servicios li { background: #eee; padding: 10px; border-radius: 5px; text-align: center; }
-
-        .contacto { display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 40px 20px; background: #fff; }
-        .btn { width: 100%; max-width: 300px; padding: 15px; text-align: center; border-radius: 30px; text-decoration: none; font-weight: bold; color: white; transition: 0.3s; }
-        
-        .btn-ws { background: var(--whatsapp); }
-        .btn-tel { background: var(--primario); }
-        .btn-mail { background: #555; }
-        .btn:hover { opacity: 0.8; transform: scale(1.05); }
-
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; background: #222; color: #ccc; }
-    </style>
+    <title>MTB Suspension Lab | HARDLINE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb4339493c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>
-        <h2>HARDLINE SUSPENSIONS</h2>
+    <nav class="navbar">
+        <div class="logo">MTB Suspension <span>LAB</span></div>
+        <div class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Expertos en Suspensión para MTB y Bicicletas</h1>
+            <p>Diagnóstico, Mantenimiento y Tuning de horquillas y amortiguadores para un rendimiento perfecto en cada ruta.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/521XXXXXXXXXX" class="btn btn-ws"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="tel:XXXXXXXXXX" class="btn btn-call"><i class="fas fa-phone-alt"></i> Llamar Ahora</a>
+            </div>
+        </div>
     </header>
 
-    <section class="hero">
-        <h1>Reparación Especializada de Suspensiones</h1>
-        <p>Tu seguridad es lo primero. Dejamos tu suspension como nueva.</p>
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1616262485600-b6f17e3a9c7b?auto=format&fit=crop&q=80&w=400" alt="Mantenimiento Horquillas">
+                <h3>Mantenimiento de Horquillas</h3>
+                <p>Revisión completa, cambio de retenes, aceite y lubricación de barras.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1627958564070-5d6665792d77?auto=format&fit=crop&q=80&w=400" alt="Mantenimiento Amortiguadores">
+                <h3>Servicio de Amortiguadores</h3>
+                <p>Desmontaje, limpieza, reemplazo de aire y aceite, ajuste de cámaras.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1549889736-a192f159a68a?auto=format&fit=crop&q=80&w=400" alt="Tuning de Suspensiones">
+                <h3>Tuning y Ajuste Personalizado</h3>
+                <p>Optimizamos tu suspensión para tu peso, estilo de manejo y terreno.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1627885061699-b1d562145e54?auto=format&fit=crop&q=80&w=400" alt="Reparación de componentes">
+                <h3>Reparación de Componentes</h3>
+                <p>Diagnóstico y reemplazo de piezas dañadas, sellos y rodamientos.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="servicios">
-        <h3>Nuestros Servicios</h3>
-        <ul>
-            <li>✅ Amortiguadores</li>
-            <li>✅ Horquillas</li>
-            <li>✅ Tijas Telescópicas </li>
-            <li>✅ Tuning and Mods</li>
-        </ul>
+    <section id="galeria" class="gallery-section">
+        <h2>Nuestras Reparaciones en Acción</h2>
+        <p class="gallery-description">Echa un vistazo a la calidad de nuestro trabajo y el detalle en cada componente.</p>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1616262485600-b6f17e3a9c7b?auto=format&fit=crop&q=80&w=600&h=400" alt="Horquilla MTB">
+            <img src="https://images.unsplash.com/photo-1627958564070-5d6665792d77?auto=format&fit=crop&q=80&w=600&h=400" alt="Amortiguador de Bicicleta">
+            <img src="https://images.unsplash.com/photo-1579547146430-c3d328c11e65?auto=format&fit=crop&q=80&w=600&h=400" alt="Bicicleta de Montaña">
+            <img src="https://images.unsplash.com/photo-1627885061699-b1d562145e54?auto=format&fit=crop&q=80&w=600&h=400" alt="Herramientas de Taller">
+            <img src="https://images.unsplash.com/photo-1533156637171-872c3d5964bb?auto=format&fit=crop&q=80&w=600&h=400" alt="Detalle de Suspensión">
+            <img src="https://images.unsplash.com/photo-1620509658510-a29d10e06003?auto=format&fit=crop&q=80&w=600&h=400" alt="Componentes de Bicicleta">
+        </div>
     </section>
 
-    <section class="contacto">
-        <h3>¡Contáctanos ahora!</h3>
-        <a href="https://wa.me/+34623182161" class="btn btn-ws">Enviar WhatsApp</a>
-        
-        <a href="tel:+34 623182161" class="btn btn-tel">Llamar ahora</a>
-        
-        <a href="mailto:hardlinesuspension@gmail.com" class="btn btn-mail">Enviar Correo</a>
+    <section id="contacto" class="cta-section">
+        <div class="cta-box">
+            <h2>¿Listo para rodar sin límites?</h2>
+            <p>Agenda una cita o consulta con nuestros expertos. Tu bicicleta merece el mejor cuidado.</p>
+            <a href="mailto:hardlinesuspension@gmail.com" class="btn btn-primary-outline"><i class="fas fa-envelope"></i> Enviar Correo</a>
+        </div>
     </section>
 
     <footer>
-        <p>Dirección: Carrer d'Aragó 648, Local 5, 08018, Barcelona | Horario: Lun a Vie 10:00 - 18:00</p>
-        <p>&copy; 2026 Tu Taller de Suspensiones</p>
+        <p><strong>Ubicación:</strong> Carrer d'Aragó 648 Local 5, 08018, Barcelona</p>
+        <p><strong>Horario:</strong> Martes a Sábado: 10:00 AM - 7:00 PM</p>
+        <div class="footer-social">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2026 MTB Suspension Lab. Todos los derechos reservados.</p>
     </footer>
 
 </body>
