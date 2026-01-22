@@ -245,32 +245,6 @@ footer {
     border: none;
 }
 
-/* Estilo del botón Setmore */
-.btn-setmore {
-    display: inline-block;
-    background-color: #a3e635; /* El verde lima de tu marca */
-    color: #061a06; /* Texto oscuro para contraste */
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: transform 0.3s, background-color 0.3s;
-    box-shadow: 0 4px 15px rgba(163, 230, 53, 0.3);
-    border: none;
-    cursor: pointer;
-}
-
-.btn-setmore:hover {
-    background-color: #82cc14;
-    transform: translateY(-3px); /* Efecto de flotado */
-    color: #000;
-}
-
-.btn-setmore i {
-    margin-right: 10px; /* Espacio para el icono de calendario */
-}
-
 /* Ajuste para móviles */
 @media (max-width: 768px) {
     .map-wrapper {
