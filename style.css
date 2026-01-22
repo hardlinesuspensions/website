@@ -10,7 +10,7 @@
     --text-light: #f8f9fa;
     --background-light: #f0f2f5; /* Gris claro */
     --btn-ws: #25d366; /* Verde de WhatsApp */
-    --btn-call: #355E3B; /* Verde oscuro para llamada */
+    --btn-call: #0A3D2D; /* Verde oscuro para llamada */
 }
 
 /* Base Global */
@@ -93,7 +93,7 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-dark-gr
 }
 
 /* Hover para botones */
-.btn-ws:hover { background: #20b05b; transform: translateY(-3px); }
+.btn-ws:hover { background: #00A36C; transform: translateY(-3px); }
 .btn-call:hover { background: #072e23; transform: translateY(-3px); }
 
 /* Sección de Servicios */
