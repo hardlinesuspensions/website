@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Suspensiones | HARDLINE</title>
+    <style>
+        :root {
+            --primario: #004085; /* Azul profesional */
+            --secundario: #ffc107; /* Amarillo para resaltar */
+            --whatsapp: #25d366;
+            --texto: #333;
+        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: var(--texto); line-height: 1.6; }
+        header { background: var(--primario); color: white; padding: 1rem; text-align: center; }
+        
+        .hero { background: #f4f4f4; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--secundario); }
+        .hero h1 { margin: 0; color: var(--primario); }
+        
+        .servicios { padding: 20px; max-width: 800px; margin: auto; }
+        .servicios ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+        .servicios li { background: #eee; padding: 10px; border-radius: 5px; text-align: center; }
+
+        .contacto { display: flex; flex-direction: column; align-items: center; gap: 15px; padding: 40px 20px; background: #fff; }
+        .btn { width: 100%; max-width: 300px; padding: 15px; text-align: center; border-radius: 30px; text-decoration: none; font-weight: bold; color: white; transition: 0.3s; }
+        
+        .btn-ws { background: var(--whatsapp); }
+        .btn-tel { background: var(--primario); }
+        .btn-mail { background: #555; }
+        .btn:hover { opacity: 0.8; transform: scale(1.05); }
+
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; background: #222; color: #ccc; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>NOMBRE DE TU TALLER</h2>
+    </header>
+
+    <section class="hero">
+        <h1>Reparación Especializada de Suspensiones</h1>
+        <p>Tu seguridad es lo primero. Dejamos tu auto como nuevo.</p>
+    </section>
+
+    <section class="servicios">
+        <h3>Nuestros Servicios</h3>
+        <ul>
+            <li>✅ Amortiguadores</li>
+            <li>✅ Horquillas</li>
+            <li>✅ Tijas Telescópicas </li>
+            <li>✅ Tuning and Mods</li>
+        </ul>
+    </section>
+
+    <section class="contacto">
+        <h3>¡Contáctanos ahora!</h3>
+        <a href="https://wa.me/+34623182161" class="btn btn-ws">Enviar WhatsApp</a>
+        
+        <a href="tel:+34 623182161" class="btn btn-tel">Llamar ahora</a>
+        
+        <a href="mailto:hardlinesuspension@gmail.com" class="btn btn-mail">Enviar Correo</a>
+    </section>
+
+    <footer>
+        <p>Dirección: Carrer d'Aragó 648, Local 5, 08018, Barcelona | Horario: Lun a Vie 10:00 - 18:00</p>
+        <p>&copy; 2026 Tu Taller de Suspensiones</p>
+    </footer>
+
+</body>
+</html>
