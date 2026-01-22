@@ -221,3 +221,34 @@ footer strong { color: white; }
 footer {
     border-top: 4px solid var(--accent-lime-green);
 }
+/* Sección del Mapa Centrada */
+.map-section {
+    padding: 60px 5%; /* Espacio arriba y abajo */
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.map-wrapper {
+    width: 100%;
+    max-width: 900px; /* Ancho máximo para que no sea gigante en PC */
+    height: 400px;    /* Altura fija */
+    border-radius: 15px; /* Bordes redondeados modernos */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Sombra para que resalte */
+    border: 3px solid var(--primary-dark-green); /* Marco con el color de tu marca */
+}
+
+.map-wrapper iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .map-wrapper {
+        height: 300px;
+        max-width: 100%; /* En celular ocupa todo el ancho disponible */
+    }
+}
