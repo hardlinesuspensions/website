@@ -195,3 +195,29 @@ footer strong { color: white; }
     .hero p { font-size: 0.9rem; }
     .cta-box h2 { font-size: 1.8rem; }
 }
+/* Contenedor del Mapa */
+.map-container {
+    width: 100%;
+    height: 300px; /* Altura del mapa */
+    margin-top: 50px;
+    background: #eee;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.map-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    filter: grayscale(0.5) contrast(1.2); /* Opcional: para un look más moderno/técnico */
+    transition: filter 0.3s;
+}
+
+.map-container iframe:hover {
+    filter: grayscale(0); /* El mapa recupera color al pasar el mouse */
+}
+
+/* Ajuste para que el footer no quede pegado al mapa */
+footer {
+    border-top: 4px solid var(--accent-lime-green);
+}
