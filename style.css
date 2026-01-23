@@ -252,3 +252,67 @@ footer {
         max-width: 100%; /* En celular ocupa todo el ancho disponible */
     }
 }
+/* Estilos FAQ Hardline Suspensions - Gama de Verdes */
+#faq-suspensiones {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#faq-suspensiones h2 {
+    text-align: center;
+    color: #1a3a34; /* Verde muy oscuro casi negro */
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 35px;
+    letter-spacing: -0.5px;
+}
+
+.faq-item {
+    background: #ffffff;
+    border: 1px solid #e0eadd; /* Gris verdoso muy suave */
+    border-left: 5px solid #4CAF50; /* Verde principal */
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 25px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.faq-item:hover {
+    border-left-width: 10px;
+    border-left-color: #2e7d32; /* Verde más intenso al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #2e7d32; /* Verde oscuro para la pregunta */
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+    line-height: 1.7;
+    color: #4a5568; /* Gris oscuro para lectura descansada */
+    font-size: 1rem;
+}
+
+.faq-item strong {
+    color: #1a3a34;
+    font-weight: 600;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 600px) {
+    .faq-item {
+        padding: 15px;
+    }
+    .faq-item h3 {
+        font-size: 1.1rem;
+    }
+}
