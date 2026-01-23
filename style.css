@@ -52,7 +52,7 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-dark-gr
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('img/AmauryMTB.jpg') no-repeat center center/cover;
+                url('img/bicicleta-mtb-btt.jpg') no-repeat center center/cover;
     height: 80vh;
     display: flex;
     align-items: center;
