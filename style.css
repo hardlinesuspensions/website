@@ -80,7 +80,8 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-dark-gr
 .btn i { margin-right: 10px; }
 .btn-ws { background: var(--btn-ws); color: white; }
 .btn-call { background: var(--btn-call); color: var(--text-light); }
-.btn-primary-outline { 
+
+/* .btn-primary-outline { 
     background: transparent; 
     color: var(--primary-dark-green); 
     border: 2px solid var(--primary-dark-green);
@@ -91,6 +92,7 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-dark-gr
     color: var(--text-light);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+*/
 
 /* Hover para botones */
 .btn-ws:hover { background: #00A36C; transform: translateY(-3px); }
