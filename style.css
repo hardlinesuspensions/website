@@ -306,7 +306,30 @@ footer {
     color: #1a3a34;
     font-weight: 600;
 }
+.footer-social {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
 
+.social-icon {
+    font-size: 22px;
+    color: #ffffff;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.social-icon:hover {
+    color: #ff6f3c; /* Hardline orange accent */
+    transform: translateY(-2px);
+}
+
+.social-icon.instagram i {
+    /* Optional: Instagram-specific styling */
+}
+
+.social-icon.email i {
+    /* Optional: Email-specific styling */
+}
 /* Ajuste para móviles */
 @media (max-width: 600px) {
     .faq-item {
@@ -316,3 +339,4 @@ footer {
         font-size: 1.1rem;
     }
 }
+
