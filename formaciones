@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mecánico Freelance para Taller | Hardline Suspensions</title>
+  <meta name="description" content="Apoyo externo de mecánico freelance para talleres de bicicletas en Barcelona y Cataluña. Diagnóstico, reparación y suspensiones. Hardline Suspensions." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .formaciones-hero {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url('img/bicicleta-mtb-btt.jpg') no-repeat center center / cover;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-lime-green);
+      color: #1a3a34;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+    }
+    .check-list {
+      list-style: none;
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      text-align: left;
+    }
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--background-light);
+      border-left: 4px solid var(--accent-lime-green);
+      border-radius: 8px;
+      padding: 0.95rem 1.2rem;
+      font-size: 0.97rem;
+      color: #444;
+      font-weight: 600;
+    }
+    .check-list li i { color: var(--primary-dark-green); margin-top: 3px; flex-shrink: 0; }
+    .fit-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.3rem 1.4rem;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--primary-dark-green);
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .fit-card:hover { transform: translateY(-5px); box-shadow: 0 10px 28px rgba(0,0,0,0.14); }
+    .fit-card i { color: var(--accent-lime-green); font-size: 1.5rem; flex-shrink: 0; background: var(--primary-dark-green); padding: 10px; border-radius: 8px; }
+    .fit-card p { margin: 0; font-size: 0.95rem; color: #444; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/">HARDLINE <span>SUSPENSIONS</span></a>
+    </div>
+    <div class="nav-links">
+      <a href="/#servicios">Servicios</a>
+      <a href="/#galeria">Galería</a>
+      <a href="/#contacto">Contacto</a>
+      <a href="/freelance.html">Freelance</a>
+      <a href="/formaciones.html">Formaciones</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero formaciones-hero">
+    <div class="hero-content">
+      <div class="badge">Apoyo a Taller</div>
+      <h1>Mecánico Freelance<br />para Refuerzo de Taller</h1>
+      <p>Trabajo como apoyo externo para talleres que necesitan un refuerzo cuando la carga sube o aparece un caso especial. Entro, me integro y saco trabajo.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/34623182161" class="btn btn-ws">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:hardlinesuspensions@gmail.com" class="btn btn-call">
+          <i class="fa-solid fa-envelope"></i> Enviar Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ APORTO -->
+  <section class="services" id="que-aporto">
+    <h2>Qué Aporto al Equipo</h2>
+    <ul class="check-list">
+      <li><i class="fa-solid fa-screwdriver-wrench"></i>Experiencia real de taller en diagnosis y reparación, con criterio y método.</li>
+      <li><i class="fa-solid fa-bolt"></i>Manos rápidas y ordenadas: entro, me integro y saco trabajo sin "ruido".</li>
+      <li><i class="fa-solid fa-comments"></i>Comunicación clara: explico lo que encuentro, lo que conviene hacer y por qué.</li>
+    </ul>
+  </section>
+
+  <!-- EN QUÉ ENCAJO -->
+  <section class="gallery-section" id="encaje">
+    <h2>En Qué Suelo Encajar Mejor</h2>
+    <div class="services-grid" style="max-width:900px; margin:0 auto;">
+      <div class="fit-card"><i class="fa-solid fa-chart-line"></i><p>Picos de trabajo, ausencias y campañas de temporada.</p></div>
+      <div class="fit-card"><i class="fa-solid fa-magnifying-glass"></i><p>Averías intermitentes y diagnósticos que se enquistan.</p></div>
+      <div class="fit-card"><i class="fa-solid fa-star"></i><p>Reparaciones que requieren cuidado y buen acabado.</p></div>
+      <div class="fit-card"><i class="fa-solid fa-gears"></i><p>Suspensiones y tijas telescópicas en general.</p></div>
+    </div>
+  </section>
+
+  <!-- CÓMO COLABORO -->
+  <section class="services" id="colaboracion">
+    <h2>Cómo Colaboro</h2>
+    <div class="services-grid">
+      <div class="card" style="padding: 1.6rem; text-align:center;">
+        <i class="fa-solid fa-clock" style="font-size:2rem; color:var(--primary-dark-green); display:block; margin-bottom:1rem;"></i>
+        <p>Por horas o por jornada, con planificación simple y seguimiento de lo hecho.</p>
+      </div>
+      <div class="card" style="padding: 1.6rem; text-align:center;">
+        <i class="fa-solid fa-handshake" style="font-size:2rem; color:var(--primary-dark-green); display:block; margin-bottom:1rem;"></i>
+        <p>Trabajo con vuestras herramientas y procesos, respetando la forma del taller.</p>
+      </div>
+      <div class="card" style="padding: 1.6rem; text-align:center;">
+        <i class="fa-solid fa-camera" style="font-size:2rem; color:var(--primary-dark-green); display:block; margin-bottom:1rem;"></i>
+        <p>Si hace falta, documento lo importante — pruebas, valores, fotos — para que quede trazabilidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contacto">
+    <div class="cta-box">
+      <h2>Si Te Interesa, Lo Hablamos</h2>
+      <p>Dime qué tipo de trabajo entra más en tu taller y en qué horarios te vendría bien el apoyo. Te propongo una fórmula que encaje con vuestro ritmo.</p>
+      <a href="https://wa.me/34623182161" class="btn btn-ws">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="mailto:hardlinesuspensions@gmail.com" class="btn btn-call">
+        <i class="fa-solid fa-envelope"></i> Enviar Email
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Hardline Suspensions</strong> · Carrer d'Aragó 648 Local 5, 08018, Barcelona</p>
+    <p>Horario: Lunes a Viernes 10:00 – 18:00</p>
+    <div class="footer-social" style="margin-top:16px;">
+      <a href="https://instagram.com/hardlinesuspensions" class="social-icon instagram" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="mailto:hardlinesuspensions@gmail.com" class="social-icon email" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <p style="margin-top:20px; opacity:0.6;">© 2026 Hardline Suspensions. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
