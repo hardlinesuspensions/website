@@ -127,7 +127,7 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-dark-gr
 .card p { padding: 0 20px 25px; font-size: 1rem; color: #555; }
 
 /* Galería */
-.gallery-section { padding: 80px 5%; text-align: center; background-color: var(--background-light); }
+.gallery-section { padding: 80px 5%; text-align: center; background-color: var(--secondary-green); }
 .gallery-section h2 { font-size: 2.5rem; margin-bottom: 20px; }
 .gallery-description { font-size: 1.1rem; color: #666; max-width: 700px; margin: 0 auto 50px; }
 .gallery-grid {
