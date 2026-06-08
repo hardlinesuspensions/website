@@ -68,6 +68,16 @@
       font-size: 1.2rem;
       margin-bottom: 1rem;
     }
+    
+    .forwho-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 420px));
+      gap: 16px;
+      justify-content: center;
+    }
+    @media (max-width: 640px) {
+      .forwho-list { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
