@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mecánico Freelance & Consultoría | Hardline Suspensions</title>
+  <meta name="description" content="Servicios de mecánico freelance para carreras y eventos MTB, consultoría de suspensiones, asesoría para marcas y tiendas, y tuning remoto. Hardline Suspensions, Barcelona." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ── Page-specific extras ── */
+
+    .freelance-hero {
+      background: linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)),
+        url('img/bicicleta-mtb-btt.jpg') no-repeat center center/cover;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--text-light);
+      padding: 0 5%;
+    }
+
+    .freelance-hero .hero-content { max-width: 820px; }
+
+    .freelance-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .freelance-hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-lime-green);
+      color: #1a3a34;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Freelance services ── */
+    .freelance-services {
+      padding: 80px 5%;
+      text-align: center;
+      background-color: white;
+    }
+
+    .freelance-services h2 {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    .freelance-services .section-sub {
+      color: #666;
+      max-width: 640px;
+      margin: 0 auto 50px;
+      font-size: 1.05rem;
+    }
+
+    .freelance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .freelance-card {
+      background: var(--background-light);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+    }
+
+    .freelance-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .freelance-card-icon {
+      background: var(--primary-dark-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+    }
+
+    .freelance-card-icon i {
+      font-size: 2.5rem;
+      color: var(--accent-lime-green);
+    }
+
+    .freelance-card-body { padding: 24px; }
+
+    .freelance-card-body h3 {
+      font-size: 1.25rem;
+      color: var(--primary-dark-green);
+      margin-bottom: 10px;
+    }
+
+    .freelance-card-body p {
+      font-size: 0.97rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* ── How it works ── */
+    .how-section {
+      padding: 80px 5%;
+      background: var(--background-light);
+      text-align: center;
+    }
+
+    .how-section h2 { font-size: 2.5rem; margin-bottom: 50px; }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .step-box {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary-dark-green);
+      color: var(--accent-lime-green);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .step-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      color: var(--primary-dark-green);
+    }
+
+    .step-box p { font-size: 0.92rem; color: #666; }
+
+    /* ── For who ── */
+    .forwho-section {
+      padding: 80px 5%;
+      background: white;
+      text-align: center;
+    }
+
+    .forwho-section h2 { font-size: 2.5rem; margin-bottom: 12px; }
+    .forwho-section .section-sub {
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .forwho-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .forwho-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--background-light);
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+      border-left: 4px solid var(--accent-lime-green);
+    }
+
+    .forwho-item i {
+      color: var(--primary-dark-green);
+      font-size: 1.1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .forwho-item p { font-size: 0.95rem; color: #444; font-weight: 600; }
+
+    /* ── CTA ── */
+    /* reuse existing .cta-section + .cta-box from style.css */
+
+    @media (max-width: 768px) {
+      .freelance-hero { min-height: 60vh; }
+      .freelance-hero h1 { font-size: 2rem; }
+      .freelance-hero p { font-size: 1rem; }
+      .freelance-services h2, .how-section h2, .forwho-section h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV (same as index.html) -->
+  <nav class="navbar">
+    <div class="logo">HARDLINE <span>SUSPENSIONS</span></div>
+    <div class="nav-links">
+      <a href="/#servicios">Servicios</a>
+      <a href="/#galeria">Galería</a>
+      <a href="/freelance.html">Freelance</a>
+      <a href="/#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="freelance-hero">
+    <div class="hero-content">
+      <div class="badge">Servicios Freelance</div>
+      <h1>Mecánico &amp; Consultor<br />Especialista en Suspensiones MTB</h1>
+      <p>Soporte técnico experto en competición, setup personalizado y consultoría para marcas y tiendas. Donde lo necesites, cuando lo necesites.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/34623182161" class="btn btn-ws">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:hardlinesuspensions@gmail.com" class="btn btn-call">
+          <i class="fa-solid fa-envelope"></i> Enviar Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="freelance-services" id="servicios-freelance">
+    <h2>Servicios Disponibles</h2>
+    <p class="section-sub">Disponible para eventos puntuales, temporadas completas o proyectos de consultoría. Cobertura en Barcelona, Cataluña y toda España.</p>
+    <div class="freelance-grid">
+
+      <div class="freelance-card">
+        <div class="freelance-card-icon">
+          <i class="fa-solid fa-flag-checkered"></i>
+        </div>
+        <div class="freelance-card-body">
+          <h3>Mecánico en Carrera y Eventos</h3>
+          <p>Asistencia técnica completa en competiciones XC, Enduro, DH o Gravel. Preparación previa, soporte en boxes y reparaciones en caliente para que nada te frene el día de la carrera.</p>
+        </div>
+      </div>
+
+      <div class="freelance-card">
+        <div class="freelance-card-icon">
+          <i class="fa-solid fa-gears"></i>
+        </div>
+        <div class="freelance-card-body">
+          <h3>Consultoría de Suspensiones y Setup</h3>
+          <p>Análisis y ajuste personalizado de horquillas y amortiguadores según tu peso, estilo de pilotaje y terreno. Trabajo con Fox, RockShox, Öhlins, Marzocchi, DVO y más.</p>
+        </div>
+      </div>
+
+      <div class="freelance-card">
+        <div class="freelance-card-icon">
+          <i class="fa-solid fa-store"></i>
+        </div>
+        <div class="freelance-card-body">
+          <h3>Consultoría para Marcas y Tiendas</h3>
+          <p>Formación técnica para equipos de venta, protocolos de mantenimiento, selección de producto y soporte posventa. Ayudo a tiendas y distribuidores a ofrecer un servicio de suspensiones de primer nivel.</p>
+        </div>
+      </div>
+
+      <div class="freelance-card">
+        <div class="freelance-card-icon">
+          <i class="fa-solid fa-laptop"></i>
+        </div>
+        <div class="freelance-card-body">
+          <h3>Asesoría Remota de Tuning</h3>
+          <p>Diagnóstico y guía de ajuste a distancia. Revisamos juntos los datos de tu suspensión, resolvemos problemas de comportamiento y definimos el setup ideal sin desplazamiento.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <h2>¿Cómo Funciona?</h2>
+    <div class="steps-grid">
+      <div class="step-box">
+        <div class="step-number">1</div>
+        <h3>Cuéntame qué necesitas</h3>
+        <p>Escríbeme por WhatsApp o email con los detalles: tipo de evento, fechas, marcas o problema a resolver. Respondo en menos de 24 h.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">2</div>
+        <h3>Valoración sin compromiso</h3>
+        <p>Analizo tu caso y te propongo la mejor solución con presupuesto claro. Para eventos: confirmamos logística y disponibilidad.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">3</div>
+        <h3>Manos a la obra</h3>
+        <p>Presencial en el evento o taller, o en remoto. Herramienta profesional y recambios originales para garantizar el mejor resultado.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">4</div>
+        <h3>Seguimiento post-servicio</h3>
+        <p>No desaparezco tras el trabajo. Hago seguimiento para asegurar que todo funciona y resolver cualquier duda que surja.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR WHO -->
+  <section class="forwho-section">
+    <h2>¿Para Quién?</h2>
+    <p class="section-sub">Desde corredores amateur hasta marcas del sector, mi servicio se adapta a cada perfil.</p>
+    <div class="forwho-list">
+      <div class="forwho-item">
+        <i class="fa-solid fa-bicycle"></i>
+        <p>Equipos y corredores semiprofesionales y amateur</p>
+      </div>
+      <div class="forwho-item">
+        <i class="fa-solid fa-trophy"></i>
+        <p>Organizadores de pruebas y maratones MTB</p>
+      </div>
+      <div class="forwho-item">
+        <i class="fa-solid fa-shop"></i>
+        <p>Tiendas especializadas que quieren mejorar su servicio técnico</p>
+      </div>
+      <div class="forwho-item">
+        <i class="fa-solid fa-building"></i>
+        <p>Marcas de componentes y distribuidores en España</p>
+      </div>
+      <div class="forwho-item">
+        <i class="fa-solid fa-chart-line"></i>
+        <p>Pilotos que buscan un setup serio antes de una gran carrera</p>
+      </div>
+      <div class="forwho-item">
+        <i class="fa-solid fa-wrench"></i>
+        <p>Riders exigentes que quieren sacar el máximo de sus suspensiones</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contacto">
+    <div class="cta-box">
+      <h2>¿Hablamos?</h2>
+      <p>Sin compromiso. Cuéntame tu proyecto y vemos cómo puedo ayudarte.</p>
+      <a href="https://wa.me/34623182161" class="btn btn-ws">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="mailto:hardlinesuspensions@gmail.com" class="btn btn-call">
+        <i class="fa-solid fa-envelope"></i> hardlinesuspensions@gmail.com
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Hardline Suspensions</strong> · Carrer d'Aragó 648 Local 5, 08018, Barcelona</p>
+    <p>Horario: Lunes a Viernes 10:00 – 18:00</p>
+    <div class="footer-social" style="margin-top:16px;">
+      <a href="https://instagram.com/hardlinesuspensions" class="social-icon instagram" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="mailto:hardlinesuspensions@gmail.com" class="social-icon email" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <p style="margin-top:20px; opacity:0.6;">© 2026 Hardline Suspensions. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
