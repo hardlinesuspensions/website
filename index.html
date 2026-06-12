@@ -32,6 +32,10 @@
     <meta name="twitter:description" content="Especialistas en suspensiones MTB en Barcelona. Mantenimiento, reparación y tuning de horquillas y amortiguadores.">
     <meta name="twitter:image" content="https://hardlinesuspensions.com/img/bicicleta-mtb-btt.jpg">
 
+    <!-- Hreflang: tells search engines about the two language versions -->
+    <link rel="alternate" hreflang="es" href="https://hardlinesuspensions.com/index.html">
+    <link rel="alternate" hreflang="en" href="https://hardlinesuspensions.com/en.html">
+
     <!-- Code By r.bedmar-->
     <script src="https://kit.fontawesome.com/0277c5ca51.js" crossorigin="anonymous"></script>
     <script type="application/ld+json">
@@ -163,18 +167,23 @@
         <div class="logo">
             <a href="/">HARDLINE <span>SUSPENSIONS</span></a>
         </div>
-        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
         <div class="nav-links" id="nav-links">
             <a href="#servicios">Servicios</a>
             <a href="#galeria">Galería</a>
             <a href="#contacto">Contacto</a>
             <a href="/freelance.html">Freelance</a>
             <a href="/formaciones.html">Formaciones</a>
+        </div>
+        <div class="navbar-right">
+            <div class="lang-switcher">
+                <a href="index.html" class="lang-btn active">ES</a>
+                <a href="en.html" class="lang-btn">EN</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -288,6 +297,7 @@
         -->
         <p>&copy; 2026 Hardline Suspensions. Todos los derechos reservados.</p>
     </footer>
+
 <script>
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links');
