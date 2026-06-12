@@ -57,6 +57,38 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-dark-gr
 }
 .nav-links a:hover { color: var(--accent-lime-green); }
 
+/* Navbar right group: language switcher + hamburger */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+}
+.lang-btn {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+    opacity: 0.6;
+    letter-spacing: 0.05em;
+}
+.lang-btn.active,
+.lang-btn:hover {
+    background: var(--accent-lime-green);
+    color: var(--primary-dark-green);
+    border-color: var(--accent-lime-green);
+    opacity: 1;
+}
+
 /* Hamburger button - hidden on desktop */
 .hamburger {
     display: none;
