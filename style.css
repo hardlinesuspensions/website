@@ -57,6 +57,25 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-dark-gr
 }
 .nav-links a:hover { color: var(--accent-lime-green); }
 
+/* Hamburger button - hidden on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-light);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -207,11 +226,22 @@ footer strong { color: white; }
 
 @media (max-width: 480px) {
     .navbar .logo { font-size: 1.5rem; }
-    .nav-links { display: none; } /* Ocultar enlaces de navegación en pantallas muy pequeñas, puedes agregar un menú hamburguesa si quieres */
+    .hamburger { display: flex; } /* Show hamburger on phones */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0 1rem;
+        gap: 0.5rem;
+    }
+    .nav-links.open { display: flex; } /* Show when toggled */
+    .nav-links a { margin: 5px 0; font-size: 1rem; }
     .hero h1 { font-size: 1.6rem; }
     .hero p { font-size: 0.9rem; }
     .cta-box h2 { font-size: 1.8rem; }
 }
+
 /* Contenedor del Mapa */
 .map-container {
     width: 100%;
